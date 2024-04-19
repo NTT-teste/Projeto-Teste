@@ -1,24 +1,18 @@
-## Desafio técnico para desenvolvedores
+Para rodar o projeto: 
 
-Construa uma nova aplicação, utilizando o framework Angular ou VueJS (de acordo com sua preferência), a qual deverá conectar na API do [Rick and Morty](https://rickandmortyapi.com/) e disponibilizar as seguintes funcionalidades:
+    • npm i
+    • npm start
 
-1. **Campo de Pesquisa com Autocomplete:**
-   - Implemente um campo de pesquisa que utilize autocomplete de acordo com a digitação do usuário, mostrando opções para o mesmo.
-   
-2. **Listagem de Personagens:**
-   - Liste os personagens encontrados de acordo com a pesquisa realizada pelo usuário.
-   
-3. **Detalhes do Personagem:**
-   - Permita visualizar os detalhes do personagem escolhido, exibindo um card com informações relevantes.
+Para começar a utilizar o projeto, abra no seu navegador através de: http://localhost:4200
 
-**Requisitos:**
-- A aplicação deve ser totalmente nova.
-- A solução deve estar em um repositório público do GitHub.
-- A aplicação precisa armazenar as informações encontradas.
-- Testes unitários devem ser implementados.
-- O README da aplicação deve conter instruções detalhadas para subir o ambiente.
+Caso queira testar os testes unitários do projeto, rode comando:
 
-**Observações:**
-- O uso de PostgreSQL, MySQL ou SQL Server como banco de dados é opcional.
-- Ao finalizar, faça um Pull Request neste repositório e nos avise por email.
-- Caso não consiga finalizar o teste, por favor nos informe o motivo e suas dificuldades. Você pode também sugerir uma abordagem alternativa para avaliarmos suas habilidades técnicas.
+    • ng test
+
+Ou caso queira rodar um por um, rode os respectivos comandos:
+
+    • ng test --include="**/character-details.component.spec.ts"
+    • ng test --include="**/characters-list.component.spec.ts" 
+    • ng test --include="**/fun-facts.component.spec.ts" 
+    • ng test --include="**/home.component.spec.ts" 
+    
