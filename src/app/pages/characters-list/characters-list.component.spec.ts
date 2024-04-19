@@ -32,10 +32,8 @@ describe('RickAndMortyService', () => {
       }
     ];
 
-    // Mock the service method to return a Promise
     spyOn(service, 'searchCharacter').and.returnValue(Promise.resolve(mockCharacters));
 
-    // Use async/await with toPromise
     const response = await service.searchCharacter('Alien Morty');
     expect(response[0].name).toEqual(mockCharacters[0].name);
   });

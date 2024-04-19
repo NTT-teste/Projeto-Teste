@@ -1,4 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
 @import '@angular/material/theming';
 
 html, body {
@@ -18,7 +17,6 @@ body {
 }
 
 
-// Define your custom theme
 $custom-primary: mat-palette($mat-indigo);
 $custom-accent: mat-palette($mat-pink, A200, A100, A400);
 
@@ -27,7 +25,6 @@ $custom-theme: mat-light-theme(
   $custom-accent
 );
 
-// Apply the theme to the application
 @include angular-material-theme($custom-theme);
 
 
